@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,900&display=swap');
+
+
+:root {
+    --orange: #ea062b;
+    --grey: #666;
+    --black: #111;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+
+.campaign-section {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+
+.campaign-section .upper-part {
+    text-align: center;
+}
+
+.campaign-section .upper-part h3 {
+    color: var(--orange);
+    font-size: 13px;
+}
+
+.campaign-section .upper-part h2 {
+    font-size: 30px;
+}
+
+.campaign-section .lower-part {
+    padding: 50px 0;
+}
+
+.campaign-section .lower-part .slider {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.campaign-section .lower-part .slider .col {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.campaign-section .lower-part .col .col-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: white;
+}
+
+.campaign-section .lower-part .col .col-row .inner-col {
+    width: 50%;
+}
+
+.campaign-section .lower-part .col .inner-col .img {
+    position: relative;
+}
+
+.campaign-section .lower-part .col .inner-col .img:hover .hover {
+    display: block;
+}
+
+.campaign-section .lower-part .col .inner-col .img img {
+    width: 100%;
+}
+
+.campaign-section .lower-part .col .inner-col .img .hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    height: 100%;
+    width: 100%;
+
+}
+
+.campaign-section .lower-part .inner-col .img .hover a {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.campaign-section .lower-part .inner-col .text {
+    padding: 0 10px;
+}
+
+.campaign-section .lower-part .inner-col .text p {
+    color: var(--grey);
+}
+
+.campaign-section .lower-part .inner-col .text .time-place {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.campaign-section .lower-part .inner-col .text .date,
+.campaign-section .lower-part .inner-col .text .time,
+.campaign-section .lower-part .inner-col .text .place {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+}
+
+.campaign-section .lower-part .inner-col .text i {
+    color: var(--orange);
+}
+
+.campaign-section .lower-part .inner-col .text .date p,
+.campaign-section .lower-part .inner-col .text .time-place p {
+    padding: 0 10px;
+}
+
+.campaign-section .lower-part .inner-col .text h4 {
+    font-size: 18px;
+}
+
+.campaign-section .lower-part .inner-col .text h4:hover {
+    color: var(--orange);
+}
+
+
+
+/* slick css */
+.slick-next::before,
+.slick-prev::before {
+    color: var(--orange) !important;
+}
+
+.slick-dots li button {
+    border: 2px solid var(--orange) !important;
+    border-radius: 50% !important;
+}
+
+.slick-dots li.slick-active button::before {
+    color: var(--orange) !important;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width:1200px){
+    .campaign-section .lower-part .inner-col .text h4 {
+        margin-block: 2px;
+    }
+    .campaign-section .lower-part .inner-col .text p {
+        font-size: 12px
+    };
+}
+
+@media(max-width:567px) {
+    .campaign-section .lower-part .inner-col .text p {
+        font-size: 10px;
+    }
+
+    .campaign-section .lower-part .inner-col .text .date p,
+    .campaign-section .lower-part .inner-col .text .time-place p {
+        padding: 0 5px;
+        margin-block: 3px; ;
+    }
+
+    .campaign-section .lower-part .inner-col .text h4 {
+        font-size: 15px;
+        margin-block: 2px;
+    }
+}
